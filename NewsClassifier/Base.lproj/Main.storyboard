@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NewsClassifier" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3JL-rq-QQx">
+                                <rect key="frame" x="78" y="56" width="219" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNM-Fa-bea">
+                                <rect key="frame" x="153.5" y="106" width="68" height="30"/>
+                                <state key="normal" title="Sınıflandır"/>
+                                <connections>
+                                    <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RJL-B5-Pf3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kategori" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aU0-AL-FUC">
+                                <rect key="frame" x="78" y="146" width="65" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Kategori" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ue-Ol-sqL">
+                                <rect key="frame" x="175" y="146" width="65" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CNM-Fa-bea" firstAttribute="top" secondItem="3JL-rq-QQx" secondAttribute="bottom" constant="20" id="8UQ-TH-qJ2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3JL-rq-QQx" secondAttribute="trailing" constant="78" id="CVc-G7-6qr"/>
+                            <constraint firstItem="3JL-rq-QQx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="E9g-6g-0Wb"/>
+                            <constraint firstItem="CNM-Fa-bea" firstAttribute="centerX" secondItem="3JL-rq-QQx" secondAttribute="centerX" id="LAX-vC-taw"/>
+                            <constraint firstItem="3JL-rq-QQx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="78" id="Okx-Ia-zzZ"/>
+                            <constraint firstItem="2Ue-Ol-sqL" firstAttribute="top" secondItem="CNM-Fa-bea" secondAttribute="bottom" constant="10" id="UIL-lu-Jek"/>
+                            <constraint firstItem="aU0-AL-FUC" firstAttribute="top" secondItem="CNM-Fa-bea" secondAttribute="bottom" constant="10" id="aDn-t9-b08"/>
+                            <constraint firstItem="aU0-AL-FUC" firstAttribute="leading" secondItem="3JL-rq-QQx" secondAttribute="leading" id="mLR-w2-uQW"/>
+                            <constraint firstItem="aU0-AL-FUC" firstAttribute="centerY" secondItem="2Ue-Ol-sqL" secondAttribute="centerY" id="mUh-2J-gAr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="2Ue-Ol-sqL" id="Ik8-xv-FfU"/>
+                        <outlet property="textField" destination="3JL-rq-QQx" id="hpA-uv-Lkf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
